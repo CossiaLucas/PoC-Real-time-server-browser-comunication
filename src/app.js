@@ -8,6 +8,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+const colors = ["red", "green", "blue", "yellow", "pink", "purple"];
+
 app.get("/currentTime", (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*"); 
   res.setHeader("Content-Type", "text/event-stream"); // Esto le indica a la pagina que es un flujo de eventos del servidor

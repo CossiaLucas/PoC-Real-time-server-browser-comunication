@@ -1,0 +1,44 @@
+<!doctype html>
+<title>Relojes SSE — New York / Pekín / Tokyo / Rosario</title>
+</head>
+<body>
+<h1>Relojes en tiempo real (SSE)</h1>
+<p>Conexión mediante <strong>Server-Sent Events</strong>. Se actualiza cada segundo desde el servidor.</p>
+
+
+<div class="grid">
+<div class="card" id="ny">
+<div class="tz">New York — America/New_York</div>
+<div class="time" id="ny-time">—:—:—</div>
+<div class="date" id="ny-date"></div>
+</div>
+
+
+<div class="card" id="bj">
+<div class="tz">Pekín — Asia/Shanghai</div>
+<div class="time" id="bj-time">—:—:—</div>
+<div class="date" id="bj-date"></div>
+</div>
+
+
+<div class="card" id="tk">
+<div class="tz">Tokyo — Asia/Tokyo</div>
+<div class="time" id="tk-time">—:—:—</div>
+<div class="date" id="tk-date"></div>
+</div>
+
+
+<div class="card" id="ros">
+<div class="tz">Rosario — America/Argentina/Cordoba</div>
+<div class="time" id="ros-time">—:—:—</div>
+<div class="date" id="ros-date"></div>
+</div>
+</div>
+
+
+<div class="status" id="status">Conectando a SSE…</div>
+
+
+
+</body>
+</html>
