@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hora del dia</title>
+  <script defer src="index.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Relojes en tiempo real (SSE)</h1>
+<p>Conexión mediante <strong>Server-Sent Events</strong>. Se actualiza cada segundo desde el servidor.</p>
+
+
+<div class="grid">
+<div class="card" id="ny">
+<div class="tz">New York — America/USA</div>
+<div class="time" id="ny-time">—:—:—</div>
+<div class="date" id="ny-date"></div>
+</div>
+
+
+<div class="card" id="bj">
+<div class="tz">Pekín — Asia/China</div>
+<div class="time" id="bj-time">—:—:—</div>
+<div class="date" id="bj-date"></div>
+</div>
+
+
+<div class="card" id="tk">
+<div class="tz">Tokyo — Asia/Japon</div>
+<div class="time" id="tk-time">—:—:—</div>
+<div class="date" id="tk-date"></div>
+</div>
+
+
+<div class="card" id="ros">
+<div class="tz">Rosario — America/Argentina</div>
+<div class="time" id="ros-time">—:—:—</div>
+<div class="date" id="ros-date"></div>
+</div>
+</div>
+
+<div class="status" id="status">Conectando a SSE…</div>
+
+</body>
+</html>
