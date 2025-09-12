@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import express from "express";
-import cors from "cors";
-
-const app = express();
-=======
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -14,44 +8,23 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
->>>>>>> master
 app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-<<<<<<< HEAD
-const colors = ["red", "green", "blue", "yellow", "pink", "purple"];
-
-app.get("/currentTime", (req, res) => {
-=======
 app.use(express.static(path.join(__dirname, 'public'))); //Conectamos a FrontEnd
 
 
 app.get("/events", (req, res) => {
->>>>>>> master
-  res.setHeader("Access-Control-Allow-Origin", "*"); 
+
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Permitir solicitudes desde cualquier origen (CORS)
   res.setHeader("Content-Type", "text/event-stream"); // Esto le indica a la pagina que es un flujo de eventos del servidor
   res.setHeader("Cache-Control", "no-cache"); // Esto evita que se almacene caché
   res.setHeader("Connection", "keep-alive"); // Esto mantiene la conexión abierta
   res.flushHeaders();
 
-<<<<<<< HEAD
-  const intervalId = setInterval(() => {
-    res.write(`data: ${new Date().toLocaleTimeString()}\n\n`);
-  }, 1000);
-
-  res.on("close", () => {
-    clearInterval(intervalId);
-    res.end();
-  });
-});
-
-app.listen(3000, () => {
-  console.log("server is running on port http://localhost:3000");
-});
-=======
   const sendTime = () => {
   const now = new Date().toISOString(); //Utilizamos ISO para tenes la zona horaria UTC
   res.write(`data: ${now}\n\n`);
@@ -75,4 +48,4 @@ app.get('*', (req, res) => {
 app.listen(5500, () => {
   console.log("server is running on port http://localhost:5500");
 })
->>>>>>> master
+
