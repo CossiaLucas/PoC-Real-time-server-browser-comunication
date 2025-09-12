@@ -1,0 +1,44 @@
+body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    margin:32px;background:#0f172a;color:#e6eef8
+}
+.card{
+    background:rgba(255,255,255,0.04);
+    padding:18px;
+    border-radius:12px
+    ;box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    width:260px
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:16px
+}
+h1{
+    font-size:20px;
+    margin-bottom:8px
+}
+.tz{
+    font-weight:700;
+    margin-bottom:4px
+}
+.time{
+    font-size:28px;
+    letter-spacing:1px
+}
+.date{
+    font-size:12px;
+    opacity:0.8
+}
+.status{
+    margin-top:14px;
+    font-size:13px;
+    opacity:0.9
+}
+
+.derecho{
+    margin-top:40px;
+    font-size:13px;
+    opacity:0.6;
+    text-align:center;
+}

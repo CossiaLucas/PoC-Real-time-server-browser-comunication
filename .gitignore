@@ -2,4 +2,10 @@ package.json
 
 pnpm-lock.yaml
 
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+
+package-lock.json
+>>>>>>> master

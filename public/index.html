@@ -5,24 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hora del dia</title>
   <script defer src="index.js"></script>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column; 
-      justify-content: center;
-      align-items: center;    
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: aliceblue;
-      background-color: #252424;
-    }
-  </style>
-  </head>
-  <body>
-    <h1>Argentina de mi corazon </h1>
-      <br>
-      <br>
-    <h2 id="hora">Hora</h2>
-  </body>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Relojes en tiempo real (SSE)</h1>
+<p>Conexión mediante <strong>Server-Sent Events</strong>. Se actualiza cada segundo desde el servidor.</p>
+
+
+<div class="grid">
+<div class="card" id="ny">
+<div class="tz">New York — America/USA</div>
+<div class="time" id="ny-time">—:—:—</div>
+<div class="date" id="ny-date"></div>
+</div>
+
+
+<div class="card" id="bj">
+<div class="tz">Pekín — Asia/China</div>
+<div class="time" id="bj-time">—:—:—</div>
+<div class="date" id="bj-date"></div>
+</div>
+
+
+<div class="card" id="tk">
+<div class="tz">Tokyo — Asia/Japon</div>
+<div class="time" id="tk-time">—:—:—</div>
+<div class="date" id="tk-date"></div>
+</div>
+
+
+<div class="card" id="ros">
+<div class="tz">Rosario — America/Argentina</div>
+<div class="time" id="ros-time">—:—:—</div>
+<div class="date" id="ros-date"></div>
+</div>
+</div>
+
+<div class="status" id="status">Conectando a SSE…</div>
+
+<div class="derecho">@2025 Valen Bertuccelli y sus redonditos de chipa - Todos los derechos reservados</div>
+  
+</body>
 </html>
